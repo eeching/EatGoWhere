@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content%}
+    <h1>Next up, {{ new_food.name }}!</h1>
+    {%for p in plan%}
+    <div><p>{{p.food.name}} comes next! <b>Rating: {{p.rating}}</b> </p></div>
+    {% endfor %}
+{% endblock %}
